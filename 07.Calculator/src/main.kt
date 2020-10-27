@@ -1,12 +1,11 @@
 fun main() {
-    var x: Int = 1
-    when(x)
-    {
-        1 -> print("x is one")
-        2 -> print("x is two")
-        else -> 
-        {
-            print("x is not good")
-        }
+    val numArray = doubleArrayOf(45.3, 67.5, -45.6, 20.34, 33.0, 45.6)
+    var sum = 0.0
+
+    for (num in numArray) {
+        sum += num
     }
+
+    val average = sum / numArray.size
+    println("The average is: %.2f".format(average))
 }
